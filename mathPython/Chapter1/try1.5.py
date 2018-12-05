@@ -10,7 +10,7 @@ def factors(b):
             print(i)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':#本体のパイソンファイルでしか動かない
 
     b = input('Your Number Please:')
     b = float(b)
