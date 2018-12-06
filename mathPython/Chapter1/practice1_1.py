@@ -28,8 +28,19 @@ def odd_even_decision(a):
 
 if __name__ == '__main__':
 
-    a = int(input("数字を入力してください"))
-    odd_even_decision(a)
+    try:
+        a = float(input("数字を入力してください"))
+
+        if not a.is_integer():
+            raise ValueError
+
+        odd_even_decision(a)
+
+    except (ValueError,TypeError):
+
+        print("int型の整数を入れてください")
+
+
 
 
 
