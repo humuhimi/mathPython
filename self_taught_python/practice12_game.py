@@ -40,7 +40,7 @@ class Game:
                 self.p2.wins += 1
                 self.wins(self.p2.name)
         win = self.winner(self.p1,self.p2)
-        print("ゲーム終了,{}の勝利です。".format(win))
+        print("\nゲーム終了,{}の勝利です。".format(win))
 
     def winner(self,p1,p2):
         if p1.wins > p2.wins:
