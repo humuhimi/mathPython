@@ -28,12 +28,12 @@ if hints is not None:
     for word in hints:
         q = "{} を入力:".format(word)
         new = input(q)
-    text = text.replace(word,new,1)
+        text = text.replace(word,new)
     print('\n')
     text = text.replace("\n","　")
     print(text)
 else:
     print("引数mlsが無効です")
 
-
 mad_libs(text)
+
