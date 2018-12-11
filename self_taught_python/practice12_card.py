@@ -13,19 +13,13 @@ class Card:
         if self.value < c2.value:
             return True
         if self.value == c2.value:
-            if self.suit < c2.suit:
-                return True
-        else:
-            return False
+            return self.suit < c2.suit  # 短く
 
     def __gt__(self,c2):
         if self.value > c2.value:
             return True
         if self.value == c2.value:
-            if self.suit > c2.suit:
-                return True
-        else:
-            return False
+            return self.suit > c2.suit
 
     def __repr__(self):
         v = self.values[self.value] + " of " \
