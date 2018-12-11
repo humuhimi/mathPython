@@ -25,5 +25,5 @@ if __name__ == '__main__':
     while a_queue.size():
         print(a_queue.dequeue())
 
-    print()
-    print(a_queue.size())
+        print()
+        print(a_queue.size())
