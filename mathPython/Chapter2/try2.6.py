@@ -5,15 +5,15 @@ Example of drawing a horizontal bar chart
 import matplotlib.pyplot as plt
 
 
-def create_bar_chart(data,labels):
+def create_bar_chart(data, labels):
 
     """ nuber of bar"""
     num_bars = len(data)
     # this list is the point on the y-axis where each
-    positions = range(1,num_bars+1)
+    positions = range(1, num_bars+1)
     plt.barh(positions,data,align='center')
     # set the label of each bar
-    plt.yticks(positions,labels)
+    plt.yticks(positions, labels)
     plt.xlabel('Steps')
     plt.ylabel('Day')
     plt.title('Number of steps walked')
