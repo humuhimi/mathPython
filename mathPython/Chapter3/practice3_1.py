@@ -38,6 +38,35 @@ def calculate_mode(numbers):
     return mode[0][0]
 
 
+def calculate_mode_plus(numbers):
+    """
+    複数　同数の最頻値がある場合
+    :param numbers:
+    :return:
+    """
+    c = Counter(numbers)
+    numbers_freq = c.most_common()
+    max_count = numbers_freq[0][1]
+    modes = []
+    for num in numbers_freq:
+        if num[1] == max_count:
+            modes.append(num[0])
+
+    for mode in modes:
+        print(mode)
+#             ヒットは2妻で?
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
     donations = [100,60,75,32,130,500,600,600,503,10,230,120,54]
     print(calculate_mean(donations)) # 平均値
@@ -50,9 +79,15 @@ if __name__ == '__main__':
     print(mode[0])  # 出現回数の多い数とその出現回数
     print(mode[0][0])  # 出現回数の多い数だけ
 
-    scores = [7, 8, 9, 9, 9, 7, 4, 2, 5, 7, 9, 6, 2, 6]
-    mode = calculate_mode(scores)
-    print(mode)
+    # scores = [7, 8, 9, 9, 9, 7, 4, 2, 5, 7, 9, 6, 2, 6]
+    # mode = calculate_mode(scores)
+    # print(mode)
+    score = [5,5,5,4,4,4,9,2,7]
+    # modes = calculate_mode_plus(score)
+    # for mode in modes:
+    #     print(mode)
+    calculate_mode_plus(score)
+
 
 
 
