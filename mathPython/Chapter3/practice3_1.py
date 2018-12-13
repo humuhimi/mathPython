@@ -57,16 +57,6 @@ def calculate_mode_plus(numbers):
 #             ヒットは2妻で?
 
 
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     donations = [100,60,75,32,130,500,600,600,503,10,230,120,54]
     print(calculate_mean(donations)) # 平均値
@@ -82,7 +72,7 @@ if __name__ == '__main__':
     # scores = [7, 8, 9, 9, 9, 7, 4, 2, 5, 7, 9, 6, 2, 6]
     # mode = calculate_mode(scores)
     # print(mode)
-    score = [5,5,5,4,4,4,9,2,7]
+    score = [5,5,5,4,4,4,6,6,6,9,2,7]
     # modes = calculate_mode_plus(score)
     # for mode in modes:
     #     print(mode)
