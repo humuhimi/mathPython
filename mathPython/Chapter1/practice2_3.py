@@ -2,7 +2,6 @@
 show Expenditure
 """
 import matplotlib.pyplot as plt
-from matplotlib.font_manager import fontManager
 
 categories_num = input('カテゴリー数を入れてください')
 category = []  # カテゴリーはいる

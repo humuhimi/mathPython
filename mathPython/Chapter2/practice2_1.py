@@ -3,7 +3,7 @@ create line graph and bar chart of today temperature
 """
 import matplotlib.pyplot as plt
 from matplotlib import matplotlib_fname,get_cachedir
-from matplotlib.font_manager import FontProperties,fontManager
+from matplotlib.font_manager import fontManager
 # fp = FontProperties(fname='/Users/humu/matplotlib/ipaexg00301/ipaexg.ttf ')
 
 

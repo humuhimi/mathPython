@@ -25,7 +25,7 @@ def find_corr_x_y(x,y):
     denominator_item2 = n*y_square_sum - squared_sum_y
     denominator = (denominator_item1*denominator_item2)**0.5
     correlation = numerator/denominator
-
+    
     return correlation
 
 
