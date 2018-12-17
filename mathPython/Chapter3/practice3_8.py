@@ -7,7 +7,7 @@ from Chapter3.practice3_5 import find_corr_x_y
 def scatter_plot(x,y):
     plt.scatter(x,y)
     plt.xlabel('summer')
-    plt.ylabel('highest_correlation')
+    plt.ylabel('swimming-school_correlation')
     plt.show()
 
 
@@ -20,11 +20,11 @@ def read_csv(filename):
         summer = []
         highest_correlated = []
 
-
         for row in reader:
-            summer.append(float(row[0]))
-            highest_correlated.append(float(row[1]))
-
+            summer.append(float(row[1]))
+            highest_correlated.append(float(row[2]))
+            if len(summer) == 100:
+                break
     return summer,highest_correlated
 
 
