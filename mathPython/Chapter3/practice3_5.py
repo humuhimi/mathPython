@@ -1,4 +1,5 @@
 def find_corr_x_y(x,y):
+    # if len(x) != len(y):
     n = len(x)
     try:
         n2 = len(y)
