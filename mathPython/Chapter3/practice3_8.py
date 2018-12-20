@@ -7,7 +7,7 @@ from Chapter3.practice3_5 import find_corr_x_y
 def scatter_plot(x,y):
     plt.scatter(x,y)
     plt.xlabel('summer')
-    plt.ylabel('swimming-school_correlation')
+    plt.ylabel('swimming-lesson_correlation')
     plt.show()
 
 
