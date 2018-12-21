@@ -18,6 +18,9 @@ def csv_plot(x,y):
 
 
 def get_csv(filename):
+    global years
+    global population
+
     years = []  # x
     population = []  # y
 
