@@ -20,7 +20,7 @@ def csv_plot(x,y):
 def get_csv(filename):
     global years
     global population
-
+    #  shadowing names はlocal変数を外で使うときに生じるので、globalをつけて具体化する
     years = []  # x
     population = []  # y
 
