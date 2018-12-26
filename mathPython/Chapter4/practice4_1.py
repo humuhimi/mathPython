@@ -8,6 +8,7 @@ def find_factor(pref):
 
     factor_pref = factor(pref)
     solve_pref = solve(pref, x, dict=True)
+    # できるだけ一つの関数には一つのことしかさせない方がいい
     pprint(factor_pref)
     print(solve_pref)
 
