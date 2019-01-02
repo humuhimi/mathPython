@@ -1,4 +1,6 @@
+
 from sympy import FiniteSet
+
 
 def probability(space, event):
     return len(event)/len(space)
@@ -22,7 +24,6 @@ if __name__ == '__main__':
             primes.append(num)
     event = FiniteSet(*primes)
     p = probability(space, event)
-
     print('Sample space:{0}'.format(space))
     print('Sample event:{0}'.format(event))
     print('probability of rolling a prime :{0:.5f}'.format(p))
