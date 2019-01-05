@@ -27,7 +27,7 @@ def read_csv(filename):
     return football, others
 
 
-if __name__ == '_main__':
+if __name__ == '__main__':
     s1 = FiniteSet(1,3,5,7,9,11,13,15,17,19)
     s2 = FiniteSet(2,3,4,5,7,11,13,17,19)
     draw_venn([s1,s2])
