@@ -44,6 +44,7 @@ def mandelbrot_set():
             z1 = complex(0, 0)
             iteration = 0
             c = complex(x, y)
+
             while (abs(z1) < 2 and iteration < max_iteration):
                 z1 = z1 ** 2 + c
                 iteration += 1
