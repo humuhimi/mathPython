@@ -55,8 +55,8 @@ if __name__ == '__main__':
 
     n = int(input('試行回数を入力してください'))
     x, y = sierpinski_gasket(n)
-    ax = plt.axis(xmin=0,ymin=0)
+    # ax = plt.axis(xmin=0,ymin=0)
     plt.plot(x,y,'o')
-    plt.title('sierpinski with {0}point'.format(n))
+    plt.title('sierpinski with {0} point'.format(n))
     plt.show()
 
